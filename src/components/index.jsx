@@ -1,0 +1,10 @@
+export { default as Layout } from "./layout";
+export { default as Header } from "./header";
+export { default as Footer } from "./footer";
+export { default as Search } from "./search";
+export { default as Profile } from "./profile";
+export { default as About } from "./about";
+export { default as PhotoGallery } from "./photo-gallery";
+export { default as AddPost } from "./add-post";
+export { default as PostLayout } from "./post-layout";
+export { default as PostList } from "./post-list";

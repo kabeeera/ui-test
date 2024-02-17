@@ -1,0 +1,161 @@
+.post-layout-wrapper {
+  background-color: #fff;
+  border-radius: 12px;
+  margin-bottom: 20px;
+
+  //   HEADER
+  .post-layout-header {
+    padding: 16px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .post-user {
+      display: flex;
+      align-items: center;
+      .avatar {
+        margin-right: 10px;
+      }
+      h2 {
+        font-size: var(--font-size-xs);
+        color: var(--color-black);
+        font-weight: 500;
+        span {
+          display: block;
+          font-size: var(--font-size-xxs);
+          color: var(--color-gray);
+          margin-top: 3px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  //   CONTENT
+  .post-content {
+    padding: 10px 16px;
+    p {
+      font-size: var(--font-size-xs);
+      color: var(--color-black);
+      line-height: 20px;
+      font-weight: 400;
+      margin-bottom: 12px;
+    }
+    .img-box {
+      overflow: hidden;
+      background-color: #000;
+      border-radius: 12px;
+      height: 100%;
+      img {
+        transition: 0.3s linear;
+        max-width: 100%;
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  //   FOOTER
+  .post-layout-footer {
+    .post-actions {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #e2e2e2;
+      margin: 0 16px;
+      button {
+        flex: 1;
+        border-radius: 0;
+        padding: 17px 15px;
+        &:first-child {
+          justify-content: flex-start;
+        }
+        &:last-child {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    .post-comment {
+      border-top: 1px solid #e2e2e2;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      .avatar {
+        margin-right: 10px;
+      }
+      .comment-actions {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 7px 10px;
+        background: #f4f5f7;
+        border-radius: 8px;
+        input {
+          flex: 1;
+          border: 0;
+          background-color: transparent;
+          width: 100%;
+          &::placeholder {
+            color: var(--color-gray);
+            font-size: var(--font-size-xs);
+          }
+          &:focus-within {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .MuiAvatar-root {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  .post-layout-footer {
+    .post-actions {
+      margin: 0 !important;
+      button {
+        padding: 12px 5px !important;
+        img {
+          width: 15px;
+        }
+        &:first-child {
+          padding-left: 10px !important;
+        }
+        &:last-child {
+          padding-right: 10px !important;
+        }
+      }
+    }
+
+    .post-comment {
+      padding: 10px !important;
+      display: flex;
+      align-items: center;
+      .avatar {
+        margin-right: 7px !important;
+      }
+      .comment-actions {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding: 5px 10px !important;
+        input {
+          flex: 1;
+          border: 0;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

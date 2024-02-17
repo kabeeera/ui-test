@@ -1,0 +1,50 @@
+.search-wrapper {
+  position: absolute;
+  margin: 0 auto;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  .search-input {
+    height: 40px;
+    border: 1px solid;
+    border-color: #e2e2ea;
+    background-color: #f4f5f7;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 4px 20px 4px 35px;
+    background-position: left 10px center;
+    background-repeat: no-repeat;
+    width: 180px;
+    &::placeholder {
+      font-size: var(--font-size-sm);
+      color: #9d9daf;
+    }
+    &:focus-visible {
+      outline-color: var(--color-orange);
+    }
+  }
+  .location-select {
+    margin-left: -18px;
+    .MuiInputBase-root {
+      background-color: #fff;
+      border-radius: 40px;
+      .MuiSelect-select {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .search-wrapper {
+    position: relative;
+    transform: unset;
+    margin: unset;
+  }
+}
+@media (max-width: 850px) {
+  .search-wrapper {
+  }
+}

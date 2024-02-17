@@ -1,0 +1,114 @@
+.profile-wrapper {
+  margin: 0px 0px 25px 0px;
+  background-color: #fff;
+  border-radius: var(--font-size-xxs);
+  overflow: hidden;
+  .cover-img {
+    width: 100%;
+  }
+  .profile-content {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-start;
+    padding: 25px 16px 14px 16px;
+    .content-inner {
+      display: flex;
+      h1 {
+        font-size: var(--font-size-lg);
+        padding-bottom: 5px;
+        margin: 0px;
+        font-weight: 500;
+        span {
+          font-size: var(--font-size-sm);
+          color: var(--color-gray);
+          display: block;
+          font-weight: 300;
+        }
+      }
+      .display-wrapper {
+        padding: 0px;
+        margin-top: -95px;
+        border: var(--font-size-xxs) solid #ffff;
+        border-radius: 50%;
+        margin-right: 10px;
+
+        img {
+          display: block;
+          max-width: 100%;
+        }
+      }
+    }
+    button {
+      background-color: var(--color-orange);
+      font-size: var(--font-size-sm);
+      border-radius: 8px;
+      box-shadow: unset;
+      font-weight: 400;
+    }
+  }
+
+  .profile-actions {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .profile-content {
+    padding-top: 14px !important;
+    // flex-direction: column;
+    .content-inner {
+      h1 {
+        font-size: var(--font-size-md) !important;
+        span {
+          font-size: var(--font-size-xs) !important;
+        }
+      }
+      .display-wrapper {
+        width: 120px;
+        height: 120px;
+        margin-top: -60px !important;
+        border: 6px solid #ffff !important;
+      }
+    }
+    button {
+      font-size: var(--font-size-xs) !important;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .cover-img {
+    height: 100px;
+    object-fit: cover;
+  }
+  .profile-content {
+    padding-top: 6px !important;
+    align-items: center;
+    flex-direction: column;
+
+    .content-inner {
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: var(--font-size-sm) !important;
+        line-height: 1;
+        text-align: center;
+        margin: 4px auto !important;
+        span {
+          font-size: var(--font-size-xxs) !important;
+          margin-top: 4px;
+        }
+      }
+      .display-wrapper {
+        width: 100px;
+        height: 100px;
+        margin-top: -50px !important;
+        border: 6px solid #ffff !important;
+        margin-right: 0 !important;
+      }
+    }
+    button {
+      font-size: var(--font-size-xxs) !important;
+      padding: 3px 10px;
+      width: 100%;
+    }
+  }
+}
