@@ -8,3 +8,4 @@ export { default as PhotoGallery } from "./photo-gallery";
 export { default as AddPost } from "./add-post";
 export { default as PostLayout } from "./post-layout";
 export { default as PostList } from "./post-list";
+export { default as AppLoader } from "./app-loader";
