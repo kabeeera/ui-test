@@ -74,6 +74,7 @@
         flex: 1;
         border-radius: 0;
         padding: 17px 15px;
+        white-space: pre;
         &:first-child {
           justify-content: flex-start;
         }
@@ -155,6 +156,16 @@
           border: 0;
           background-color: transparent;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .post-layout-footer {
+    .post-actions {
+      button {
+        font-size: var(--font-size-xxs) !important;
       }
     }
   }

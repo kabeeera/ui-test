@@ -84,3 +84,8 @@ header {
     max-width: 120px;
   }
 }
+@media (max-width: 380px) {
+  .header-bottom {
+    display: none !important;
+  }
+}
